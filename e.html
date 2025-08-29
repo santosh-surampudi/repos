@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Event Registration Form</title> 
+</head> 
+<body> 
+<h2>Event Registration Form</h2> 
+<form> 
+Name: <input type="text"></input><br><br> 
+ph no. : <input type="number"></input><br><br> 
+Email: <input type="Email" ></input><br><br> 
+    <div> 
+       
+      <h3>Gender:</h3> 
+       
+      <input type="radio" name="gender" value="male">Male<br> 
+ 
+      <input type="radio"  name="gender" value="female">female<br> 
+ 
+      <input type="radio" name="gender" value="other">Other<br> 
+    </div> 
+ 
+    <div> 
+     <h3> Multiple Interests:</h3> 
+      <input type="checkbox"  name="course" value="music">Music<br> 
+ 
+      <input type="checkbox" name="course" value="Sports">Sports<br> 
+ 
+ 
+      <input type="checkbox"  name="course" value="Art">Art<br> 
+       
+    </div> 
+ 
+    <form> 
+      <h3>Location</h3> 
+    <select name="location"> 
+       
+      <option value="kerala">kerala</option> 
+      <option value="goa">goa</option> 
+      <option value="Vijayawada">Vijayawada</option> 
+    </select> 
+    </form> 
+ 
+    <h3>Comment box</h3> 
+    <textarea name="comments"  rows="4" cols="20"></textarea> 
+ 
+    <div class="submit-button"> 
+      <input type="submit" value="Register"> 
+      <input type="submit" value="submit"> 
+    </div> 
+ 
+ 
+  <button onclick="showConfirmation()">Trigger</button> 
+ 
+  <script> 
+    function showConfirmation() { 
+      const result = confirm("Are you sure you want to proceed?"); 
+      if (result) { 
+        alert("Submitted your degtails Confirmed!"); 
+      } else { 
+        alert("Cancelled!"); 
+      } 
+    } 
+</script> 
+</form> 
+</body> 
+</html>
